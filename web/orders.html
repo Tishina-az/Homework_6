@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="nav-item"> <!-- Активная страница выделена цветом -->
-                    <a href="category.html" class="nav-link active mx-3 icon-link mt-3 nav-link active" aria-current="page">
+                    <a href="category.html" class="list-group-item mx-3 icon-link mt-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
                             <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z"/>
                             <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3"/>
@@ -40,7 +40,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="orders.html" class="list-group-item mx-3 icon-link mt-3">
+                    <a href="orders.html" class="nav-link active mx-3 icon-link mt-3 nav-link active" aria-current="page">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-table" viewBox="0 0 16 16">
                             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 2h-4v3h4zm0 4h-4v3h4zm0 4h-4v3h3a1 1 0 0 0 1-1zm-5 3v-3H6v3zm-5 0v-3H1v2a1 1 0 0 0 1 1zm-4-4h4V8H1zm0-4h4V4H1zm5-3v3h4V4zm4 4H6v3h4z"/>
                         </svg>
@@ -73,60 +73,68 @@
         <div class="row"> <!-- Заголовки на Главной странице -->
             <div class="col-12">
                 <h1 class="text-center mt-3 mb-1">
-                    Категории
+                    Заказы
                 </h1>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
-            <div class="col">
-                <div class="card w-75 mx-auto">
-                    <img src="../data/i.jpeg" class="card-img-top" alt="...">
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+            <div class="col mb-5">
+                <div class="card text-center w-75 mx-auto">
+                    <h5 class="card-header">Товар 1</h5>
                     <div class="card-body">
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-primary">Просмотр</button>
-                            <button type="button" class="btn btn-outline-primary">Редактирование</button>
-                        </div>
-                        <small class="text-body-secondary p-3">3 мин.</small>
+                        <h3 class="card-title">$ 100</h3>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве...</p>
+                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card w-75 mx-auto">
-                    <img src="../data/i.jpeg" class="card-img-top" alt="...">
+            <div class="col mb-5">
+                <div class="card text-center w-75 mx-auto">
+                    <h5 class="card-header">Товар 1</h5>
                     <div class="card-body">
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-primary">Просмотр</button>
-                            <button type="button" class="btn btn-outline-primary">Редактирование</button>
-                        </div>
-                        <small class="text-body-secondary p-3">3 мин.</small>
+                        <h3 class="card-title">$ 100</h3>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве...</p>
+                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card w-75 mx-auto">
-                    <img src="../data/i.jpeg" class="card-img-top" alt="...">
+            <div class="col mb-5">
+                <div class="card text-center w-75 mx-auto">
+                    <h5 class="card-header">Товар 1</h5>
                     <div class="card-body">
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-primary">Просмотр</button>
-                            <button type="button" class="btn btn-outline-primary">Редактирование</button>
-                        </div>
-                        <small class="text-body-secondary p-3">3 мин.</small>
+                        <h3 class="card-title">$ 100</h3>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве...</p>
+                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card w-75 mx-auto">
-                    <img src="../data/i.jpeg" class="card-img-top" alt="...">
+            <div class="col mb-5">
+                <div class="card text-center w-75 mx-auto">
+                    <h5 class="card-header">Товар 1</h5>
                     <div class="card-body">
-                        <p class="card-text">Это более длинная карта С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <div class="btn-group" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-primary">Просмотр</button>
-                            <button type="button" class="btn btn-outline-primary">Редактирование</button>
-                        </div>
-                        <small class="text-body-secondary p-3">3 мин.</small>
+                        <h3 class="card-title">$ 100</h3>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве...</p>
+                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card text-center w-75 mx-auto">
+                    <h5 class="card-header">Товар 1</h5>
+                    <div class="card-body">
+                        <h3 class="card-title">$ 100</h3>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве...</p>
+                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card text-center w-75 mx-auto">
+                    <h5 class="card-header">Товар 1</h5>
+                    <div class="card-body">
+                        <h3 class="card-title">$ 100</h3>
+                        <p class="card-text">С вспомогательным текстом ниже в качестве...</p>
+                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
                     </div>
                 </div>
             </div>
