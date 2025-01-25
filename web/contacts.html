@@ -22,8 +22,8 @@
                 </div>
             </nav>
             <ul class="nav flex-column nav-pills"> <!-- Вертикальная панель с кнопками -->
-                <li class="nav-item"> <!-- Активная страница выделена цветом -->
-                    <a href="main.html" class="nav-link active mx-3 icon-link mt-3 nav-link active" aria-current="page">
+                <li class="nav-item">
+                    <a href="main.html" class="list-group-item mx-3 icon-link mt-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
                             <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
                         </svg> <!-- Иконка -->
@@ -47,8 +47,8 @@
                         Заказы
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="contacts.html" class="list-group-item mx-3 icon-link mt-3">
+                <li class="nav-item"> <!-- Активная страница выделена цветом -->
+                    <a href="contacts.html" class="nav-link active mx-3 icon-link mt-3 nav-link active" aria-current="page">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -62,6 +62,7 @@
                     </a>
                     <ul class="dropdown-menu"> <!-- Вкладка с выпадающим списком -->
                         <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Выход</a></li>
                     </ul>
                 </li>
@@ -73,42 +74,41 @@
         <div class="row"> <!-- Заголовки на Главной странице -->
             <div class="col-12">
                 <h1 class="text-center mt-3 mb-1">
-                    Главная
+                    Контакты
                 </h1>
-                <p class="fs-5 text-center text-body-secondary mt-3"> <!-- Полупрозрачный подзаголовок -->
-                    Вы находитесь на сайте, предназначенном для продажи товаров
-                </p>
             </div>
         </div>
-        <div class="row mt-5"> <!-- Заголовок -->
-            <div class="col-4">
-                <div class="card text-center w-75 mx-auto">
-                    <h5 class="card-header">Товар 1</h5>
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-5"> <!-- Блок с контактами -->
+            <div class="col mb-5">
+                <div class="card w-75 mx-auto"> <!-- Ввод данных и отправка сообщения -->
                     <div class="card-body">
-                        <h3 class="card-title">$ 100</h3>
-                        <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Имя</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Адрес электронной почты</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Сообщение</label>
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                            <div class="mb-1">
+                                <button class="btn btn-primary" type="button">Отправить</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card text-center w-75 mx-auto">
-                    <h5 class="card-header">Товар 1</h5>
-                    <div class="card-body">
-                        <h3 class="card-title">$ 100</h3>
-                        <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card text-center w-75 mx-auto">
-                    <h5 class="card-header">Товар 1</h5>
-                    <div class="card-body">
-                        <h3 class="card-title">$ 100</h3>
-                        <p class="card-text">С вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту.</p>
-                        <a href="#" class="btn btn-outline-primary d-grid gap-2">Купить</a>
-                    </div>
+            <div class="col mb-5"> <!-- Текстовая информация -->
+                <div class="w-75 text-start p-2">
+                    <h3>Наши контакты</h3>
+                    <p class="lh-base">Это длинный абзац, написанный для того, чтобы показать, как наши утилиты влияют на высоту строки элемента. Классы применяются к самому элементу или иногда к родительскому элементу. Эти классы можно настроить по мере необходимости с помощью нашего служебного API.</p>
                 </div>
             </div>
         </div>
