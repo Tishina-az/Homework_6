@@ -5,6 +5,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 hostName = "localhost"
 serverPort = 8080
 
+
 class MyServer(BaseHTTPRequestHandler):
     """
         Специальный класс, который отвечает за
