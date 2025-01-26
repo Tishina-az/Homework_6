@@ -82,24 +82,24 @@
             <div class="col mb-5">
                 <div class="card w-75 mx-auto"> <!-- Ввод данных и отправка сообщения -->
                     <div class="card-body">
-                        <form>
+                        <form method="POST">
                             <div class="mb-3">
                                 <label class="form-label">Имя</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="name" required>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Адрес электронной почты</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" aria-label="Имя пользователя" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control" name="email" required>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Сообщение</label>
-                                <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3" name="message" required></textarea>
                             </div>
                             <div class="mb-1">
-                                <button class="btn btn-primary" type="button">Отправить</button>
+                                <button class="btn btn-primary" type="submit">Отправить</button>
                             </div>
                         </form>
                     </div>

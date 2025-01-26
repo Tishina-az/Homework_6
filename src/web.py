@@ -25,9 +25,16 @@ class MyServer(BaseHTTPRequestHandler):
         """ Метод для обработки входящих POST-запросов """
         content_length = int(self.headers["Content-length"])
         body = self.rfile.read(content_length)
-        decoded = urllib.parse.unquote(body.decode("utf-8"))
-        print(decoded)
-        self.send_response(200)
+        form_data = urllib.parse.parse_qs(body.decode('utf-8'))
+
+        name = form_data['name'][0]
+        email = form_data['email'][0]
+        message = form_data['message'][0]
+
+        print(f'Form data: name={name!r}, email={email!r}, message={message!r}')
+
+        self.send_response(303)
+        self.send_header("Location", "/")
         self.end_headers()
 
 
